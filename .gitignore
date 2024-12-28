@@ -173,3 +173,19 @@ dist
 
 # Finder (MacOS) folder config
 .DS_Store
+
+node_modules
+package-lock.json
+yarn.lock
+
+.cache
+.env
+.vercel
+.output
+.vinxi
+
+/build/
+/api/
+/server/build
+/public/build
+.vinxi
