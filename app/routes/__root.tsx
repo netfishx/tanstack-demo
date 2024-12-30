@@ -79,7 +79,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 				<hr />
 				{children}
 				<ScrollRestoration />
-				<TanStackRouterDevtools position="bottom-right" />
+				{process.env.NODE_ENV === "production" ? null : (
+					<TanStackRouterDevtools position="bottom-right" />
+				)}
 				<ReactQueryDevtools buttonPosition="bottom-left" />
 				<Scripts />
 			</body>
